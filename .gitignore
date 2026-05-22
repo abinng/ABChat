@@ -1,0 +1,62 @@
+# ===== Build =====
+build*/
+cmake-build*/
+out/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# ===== CMake =====
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+Makefile
+compile_commands.json
+
+# ===== Qt =====
+*.pro.user*
+*.qmlc
+*.jsc
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+*.qm
+.qmake.stash
+
+# ===== Qt Creator =====
+.qtcreator/
+*.autosave
+*.creator.user*
+
+# ===== Compiled objects / libs =====
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.app
+*.exp
+*.ilk
+*.pdb
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Deployment =====
+deploy_script
