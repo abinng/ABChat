@@ -5,7 +5,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 6.5 REQUIRED COMPONENTS
+    Core
+    Widgets
+    Network
+)
 
 qt_standard_project_setup()
 
@@ -25,12 +29,15 @@ endif()
 qt_add_executable(ABChat
     WIN32 MACOSX_BUNDLE
     ${SOURCES}
+    singleton.h
+    httpmgr.h httpmgr.cpp
 )
 
 target_link_libraries(ABChat
     PRIVATE
         Qt::Core
         Qt::Widgets
+        Qt::Network
 )
 
 include(GNUInstallDirs)
